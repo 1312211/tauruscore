@@ -1,6 +1,8 @@
 src/*.exe
 src/taurusd
 src/build.h
+*.app
+.qmake.stash
 .*.swp
 *.*~*
 *.bak
