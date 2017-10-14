@@ -42,12 +42,12 @@ uint256 nPoWBase = uint256("0x00000000ffff00000000000000000000000000000000000000
 
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-unsigned int nStakeMinAge = 30 * nOneDay; // 30 days as zero time weight
-unsigned int nStakeMaxAge = 90 * nOneDay; // 90 days as full weight
-unsigned int nStakeTargetSpacing = 10 * 60; // 10-minute stakes spacing
-unsigned int nModifierInterval = 6 * nOneHour; // time to elapse before new modifier is computed
+unsigned int nStakeMinAge = 0.5 * nOneHour; // 30 minutes as zero time weight
+unsigned int nStakeMaxAge = 1 * nOneHour; // 1 hours as full weight
+unsigned int nStakeTargetSpacing = 2 * 60; // 2-minute stakes spacing
+unsigned int nModifierInterval = 0.25 * nOneHour; // time to elapse before new modifier is computed
 
-int nCoinbaseMaturity = 500;
+int nCoinbaseMaturity = 40;
 
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
