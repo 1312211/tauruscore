@@ -46,7 +46,7 @@ static const int64_t MIN_RELAY_TX_FEE = CENT/5000;
 static const int64_t MAX_MONEY = std::numeric_limits<int64_t>::max();
 static const int64_t MAX_MINT_PROOF_OF_WORK = 100 * COIN;
 static const int64_t MAX_MINT_PROOF_OF_STAKE = 1 * COIN;
-static const int64_t MIN_TXOUT_AMOUNT = CENT/100;
+static const int64_t MIN_TXOUT_AMOUNT = CENT/1000;
 
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
